@@ -4,8 +4,7 @@
   "description": "fullstak application ",
   "main": "index.js",
   "engines": {
-
-    "node:": "12.18.0",
+    "node": "12.18.0",
     "npm": "6.14.5"
   },
   "scripts": {
