@@ -23,7 +23,7 @@
           <span class= "helper-text red-text" *ngIf ="form.get('email').invalid && form.get('email').touched" >
             <span *ngIf = "form.get('password').errors['required']">Password cannot be empty</span>
            <span *ngIf = "form.get('password').errors['minlength'] && form.get('password').errors['minlength']['requiredLength']"></span>
-          Password must be more than {{form.get('password').errors['minlength']['requiredLength']}}  symbols
+          Password must be more than {{form.get('password').errors['minlength']['requiredLength']}} symbols
         Now {{form.get('password').errors['minlength']['actualLength']}}
         </span>
       </div>
