@@ -1,0 +1,13 @@
+backend
+
+
+http://localhost:5000/api/auth/login
+
+http://localhost:5000/api/category
+
+proxy will help us to send the request of full address like in backend
+
+Frontend
+/api/auth/login
+/api/category
+
