@@ -4,7 +4,7 @@
   (click) = "isFilterVisible = !isFilterVisible"
    class="btn btn-small"
    [ngClass] ="{
-     'active': isFilterVisible, 
+     'active': isFilterVisible,
      'red': isFiltered()
      }"
      data-tooltip ="Open filter"
@@ -16,13 +16,13 @@
 </div>
 <app-history-filter
  *ngIf = "isFilterVisible"
- (onFilter) ="applyFilter(event)"
+ (onFilter) ="applyFilter($event)"
  ></app-history-filter>
 
 <div *ngIf ="!reloading; else reloadingBlock">
 <div *ngIf ="orders.length >0;else empty">
  <app-history-list [orders]= "orders"></app-history-list>
-   <div 
+   <div
    class="center mb2"
    *ngIf = "!noMoreOrders"
    >
@@ -37,7 +37,7 @@
  <ng-template #empty>
   <div class ="center"> There are no orders yet.</div>
   </ng-template>
- 
+
 </div>
 
 <ng-template #reloadingBlock>
